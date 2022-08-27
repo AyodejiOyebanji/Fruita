@@ -1,0 +1,12 @@
+#search_box {
+    width: 50%;
+    border: none;
+    background-color: lightgrey;
+    height: 40px;
+    border-radius: 100px;
+    outline: none;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}

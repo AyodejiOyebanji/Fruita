@@ -1,0 +1,135 @@
+:root {
+  --fontfamily: #1e90ff;
+  --fontsize: #ffffff;
+  --background-color:#fff;
+  --color:#290f94;
+}
+body{
+  overflow-x: hidden;
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+}
+.leftMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #d5d5d5;
+  border-radius: 25px 25px 0px 0px;
+  z-index:200;
+  display: none;
+}
+
+.leftMenu ul {
+  display: flex;
+}
+
+.leftMenu ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.leftMenu ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.leftMenu ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 70px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.leftMenu ul li a .icon .MuiSvgIcon-root {
+  font-size: 26px;
+  color: #66A500;
+}
+
+.leftMenu ul li.active a .icon {
+  transform: translateY(-26px);
+}
+
+.leftMenu ul li.active a .icon .MuiSvgIcon-root {
+  color: #faf9fb;
+  transition: 0.5s;
+}
+
+.indicator {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #66A500;
+  top: -50%;
+  border-radius: 50%;
+  border: 6px solid #faf9fb;
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-top-right-radius: 18px;
+  box-shadow: 0px -10px 0 0 #faf9fb;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-top-left-radius: 18px;
+  box-shadow: 0px -10px 0 0 #faf9fb;
+}
+
+.leftMenu ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(60px * 0));
+}
+
+.leftMenu ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(60px * 1));
+}
+
+.leftMenu ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(60px * 2));
+}
+
+.leftMenu ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(60px * 3));
+}
+
+.leftMenu ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(60px * 4));
+}
+
+.leftMenu ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(60px * 5));
+}
+@media screen and (min-width:0px) and (max-width:600px){
+  .leftMenu{
+    display: block;
+  }
+}

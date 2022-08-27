@@ -1,0 +1,118 @@
+
+
+
+.carosel{
+  width: 100%;
+  height: 60vh;
+  background-color:   #E9DDCD;
+}
+.natural{
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+.forty{
+  font-size:60px;
+  font-family: 'Playfair Display', serif;
+}
+.shopNowBtn{
+  background:#66A500; 
+  width: 32%;
+  height: 8vh;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  color: white;   
+}
+.shopNowBtn:hover{
+  background:white;
+  color: black; 
+}
+
+
+.fruits{
+  animation-name: fadeInUp;
+  animation-delay: 2s;
+  background-image: url("../images/orange-removebg-preview.png") ;
+  background-size: 40vh 40vh;
+  animation-duration: 15s;
+  position: relative;
+  height: 60vh;   
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+  
+}
+
+ @keyframes fadeInUp {
+   0%   {background-image: url("../images/fruit2-removebg-preview.png");}
+   50%  {background-image: url("../images/coconut-removebg-preview.png");}
+   100%  {background-image: url("../images/orange-removebg-preview.png");}
+     
+} 
+
+.threeServices{
+  width: 80%;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .shopNowBtn{
+    width: 16vh ;
+    font-size: 2vh;
+  }
+  .fruits{
+    background-size: 26vh 26vh;
+    transform: translateX(-px);
+  
+  }
+
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .shopNowBtn{
+    width: 19vh ;
+  }
+  .fruits{
+    background-size: 26vh 26vh;
+    transform: translateX(4vh);
+    margin-top: -7vh;
+  
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .NaturalText{
+    padding: 4vh 1vh;
+  }
+  .forty{
+    font-size: 4vh;
+  }
+  .shopNowBtn{
+    width: 20vh ;
+  }
+  .fruits{
+    background-size: 30vh 30vh;
+    transform: translateX(-30px);
+    margin-top:-40px ;
+  }
+  
+}
+
+@media only screen and (max-width: 319px) and (min-width: 0px) {
+  .forty{
+    font-size: 4vh;
+  }
+
+  .shopNowBtn{
+    width: 25vh ;
+  }
+  
+  .fruits{
+    background-size: 25vh 25vh;
+    transform: translateX(-30px);
+    margin-top:-40px ;
+  }
+  
+}
+
+
+
+ 

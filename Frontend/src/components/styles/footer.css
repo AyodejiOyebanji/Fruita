@@ -1,0 +1,31 @@
+.footer {
+  background-color: #e5ddcc;
+  height: auto;
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+}
+.footerlogo {
+  width: 60%;
+  height: 10vh;
+}
+.footerPara {
+  font-weight: 400;
+}
+.hr {
+  width: 7vh;
+  background-color: #66a500;
+  height: 0.4vh !important;
+}
+.sendMail {
+  background-color: black;
+  width: 50%;
+  height: 6vh;
+  color: white;
+}
+.sendMail:hover {
+  background-color: #66a500;
+}
+.shortUl:hover {
+  color: #66a500;
+}

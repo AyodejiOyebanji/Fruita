@@ -1,0 +1,19 @@
+.conBtn{
+    background-color: black;
+    height: 7vh;
+    width: 100%;
+    color: white;
+}
+.conBtn:hover{
+    background-color:#66A500;
+}
+.backBtn{
+    background-color: rgb(231, 230, 230);
+    height: 7vh;
+    width: 100%;
+    color: black;
+}
+.backBtn:hover{
+    background-color: red;
+    color: white;
+}

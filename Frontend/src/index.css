@@ -1,0 +1,29 @@
+.img-large{
+    max-width: 100%;
+}
+.addToCartBtn{
+    background-color: black;
+    height: 7vh;
+    color: white;
+}
+.addToCartBtn:hover{
+    background-color:#66A500 ;
+}
+.img-thumbnail{
+    width: 80px;
+    height: auto;
+}
+.addToCartBtnReview{
+    border: thin solid #66A500 ;
+    height: 6vh;
+}
+.addToCartBtnReview:hover{
+    background-color: black;
+    color: white !important ;
+}
+.outOfstockBtn{
+    border: thin solid gray;
+    height: 6vh;
+    color: gray;
+    
+}

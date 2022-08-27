@@ -1,0 +1,169 @@
+#search_box {
+  width: 50%;
+  border: none;
+  background-color: lightgrey;
+  height: 40px;
+  border-radius: 100px;
+  outline: none;
+}
+#navbar {
+  height: 100px;
+  background-color: white;
+  z-index: 4 !important;
+}
+.whole_nav {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.cartText{
+  font-weight: 100;
+  
+}
+.dropDownBtn{
+  font-weight: 100;
+  color: black;
+
+}
+.dropDownBtn:hover{
+    color: #66a500 ;
+}
+.signInBtn {
+  background:black !important;
+  font-weight: 100;
+  
+}
+.signInBtn:hover {
+  background: #66a500  !important;
+  font-weight: 100;
+  
+}
+.subLink{
+  font-weight: 100;
+  color: black !important;
+  
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.acct_butn,
+.cart_butn {
+  color: black;
+  
+  
+}
+.acct_butn,
+.cart_butn:hover{
+  color: #66a500 ;
+}
+
+.acct2_butn,
+.cart2_butn,
+.collapse_butn {
+  color: white;
+}
+.logo_2 {
+  color: white;
+}
+#sec_navbar {
+  height: 60px;
+  background-color: #66a500;
+}
+.logo {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+  font-weight: bold;
+}
+button {
+  color: #66a500;
+}
+#third_nav {
+  display: none;
+}
+li,
+.Category_butn {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+h1 {
+  color: #66a500;
+}
+#basic-nav-dropdown{
+  color: black !important;
+}
+#admin-nav-dropdown{
+  color: white !important;
+}
+
+.links{
+  text-decoration: none !important;
+  color: black !important;
+  font-weight:lighter !important;
+
+
+}
+.subNavLink{
+  text-decoration: none !important;
+  color: white !important;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+  #sec_navbar {
+    display: none;
+  }
+  #third_nav {
+    display: block;
+    height: 60px;
+    background-color: #66a500;
+    width: 100%;
+  }
+  #navbar {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.pencil{
+    color:white;
+}
+.accountdetailsText{
+    font-size: 4vh;
+}
+.modalBtn {
+    background-color: black;
+    color:white;
+    width:5vh;
+    height: 5vh;
+}
+.modalBtn:hover{
+    background-color: #66A500;
+   
+
+}
+.detail{
+    font-size:3.5vh;
+    font-weight:500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+clone https://github.com/adrianhajdin/project_medical_pager_chat.git */

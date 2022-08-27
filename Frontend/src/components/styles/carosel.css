@@ -1,0 +1,81 @@
+.carosel{
+    width: 100%;
+    height: 60vh;
+    background-color:   #E9DDCD;
+}
+.natural{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.forty{
+    font-size:60px;
+    font-family: 'Playfair Display', serif;
+}
+.shopNowBtn{
+    background:#66A500; 
+    width: 32%;
+    height: 8vh;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: white;   
+}
+.shopNowBtn:hover{
+    background:white;
+    color: black; 
+}
+
+
+.fruits{
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+    background-image: url(../Image/mango-removebg-preview.png);
+    animation-duration: 15s;
+    position: relative;
+    height: 90vh;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeInUp {
+    0%   {background-image: url(../Image/apple-removebg-preview.png);}
+    50%  {background-image: url(../Image/mango-removebg-preview.png);}
+    100%  {background-image: url(../Image/tomato-removebg-preview.png);}
+ 
+    
+    
+    
+}
+.threeServices{
+    width: 80%;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .carosel{
+        width: 100%;
+        height: 40vh;
+        background-color:   #E9DDCD;
+    }
+    .discountSection {
+        margin-top: 80px;
+    }
+    .natural{
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+    }
+    .forty{
+        font-size:20px;
+        font-family: 'Playfair Display', serif;
+    }
+    .shopNowBtn{
+        background:#66A500; 
+        width: 100%;
+        height: 5vh;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        color: white;   
+    }
+}
+

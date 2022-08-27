@@ -1,0 +1,9 @@
+.continueBtn{
+    background-color: black;
+    height: 8vh;
+    width: 100%;
+    color: white;
+}
+.continueBtn:hover{
+    background-color: #66A500;
+}

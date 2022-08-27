@@ -1,0 +1,9 @@
+.signUpBtn{
+  background-color: black;
+  color: white;
+  height: 7vh;
+}
+.signUpBtn:hover{
+  background-color:#66A500;
+  color: white;
+}

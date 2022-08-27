@@ -1,0 +1,31 @@
+.shippingDetails{
+    width:100%;
+    height: auto;
+    border-radius:5px;
+    word-break: break-all;
+}
+.descriptionText{
+    font-size: 20px;
+}
+.shippingDetailsTable{
+    width:100%;
+    height: auto;
+    border-radius:5px;
+}
+.checkOutDiv{
+    height: 40vh;
+
+}
+.placeOrderBtn{
+    background-color: black;
+    width: 80%;
+    height: 7vh;
+    color: white;
+}
+.placeOrderBtn:hover{
+    background-color: #66A500;
+}
+.loopedImg{
+    width: 50%;
+    height: auto;
+}

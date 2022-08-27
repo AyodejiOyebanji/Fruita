@@ -1,0 +1,9 @@
+.logInBtn{
+  background-color: black;
+  color: white;
+  height: 7vh;
+}
+.logInBtn:hover{
+  background-color:#66A500;
+  color: white;
+}

@@ -1,0 +1,13 @@
+
+  .item_img{
+    width:4vh;
+    height:auto;
+  }
+  .checkOutBtn{
+    background-color: black;
+    color: white;
+    height:7vh;
+  }
+  .checkOutBtn:hover{
+    background-color: #66A500;
+  }

@@ -1,0 +1,11 @@
+.payNowBtn{
+    background-color: black;
+    height: 7vh;
+    color: white;
+}
+.payNowBtn:hover{
+    background-color: #66A500;
+}
+
+
+
