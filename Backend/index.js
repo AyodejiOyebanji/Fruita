@@ -1,11 +1,10 @@
-import express from 'express';
-import path from 'path';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import rootRouter from './routes/root.routes.js';
-import productRouter from './routes/product.routes.js';
-import userRouter from './routes/user.routes.js';
-import orderRouter from './routes/Order.routes.js';
+const express = require('express');
+const mongoose = require('mongoose');
+const  dotenv = require('dotenv');
+const rootRouter =require('./routes/root.routes.js');
+const productRouter = require('./routes/product.routes.js');
+const  userRouter = require('./routes/user.routes.js');
+const  orderRouter = require( './routes/Order.routes.js');
 dotenv.config();
 mongoose
   .connect(process.env.MONGO_URI)
@@ -35,11 +34,13 @@ app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 
 
-const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, '/Frontend/build')));
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '../Frontend/build/index.js'))
-);
+// const __dirname = path.resolve();
+app.use(express.static("build"))
+app.get('/*', (req, res) =>{
+  // res.send("HELLO")
+  //console.log(__dirname)
+  res.sendFile(__dirname+"/build/index.html")
+});
 // error handler
 
 app.use((err, req, res, next) => {

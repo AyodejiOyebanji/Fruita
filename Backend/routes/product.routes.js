@@ -1,7 +1,7 @@
-import  express  from "express";
-import Product from "../model/product.model.js";
-import dotenv from "dotenv"
-import cloudinary from "cloudinary"
+const  express  =require("express") ;
+const Product =require("../model/product.model.js");
+const dotenv =require("dotenv");
+const cloudinary=require("cloudinary") 
 dotenv.config();
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 
@@ -95,4 +95,4 @@ productRouter.post("/:id/review", (req,res)=>{
 
 })
 
-export default productRouter
+module.exports = productRouter

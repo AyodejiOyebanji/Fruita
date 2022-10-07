@@ -1,7 +1,7 @@
-import  express  from "express";
-import expressAsyncHandler from "express-async-handler";
-import Order from "../model/order.model.js";
-import { isAuth } from "../sec.js";
+const express=    require("express") ;
+const expressAsyncHandler=  require("express-async-handler") ;
+const Order = require("../model/order.model.js") ;
+const { isAuth } =  require("../sec.js") ;
 
 
 
@@ -56,6 +56,4 @@ orderRouter.put("/:id/pay", isAuth, expressAsyncHandler(async (req,res)=>{
         res.status(404).send({message:"Order Not Found"})
     }
 }))
-export default orderRouter
-
-//5:01:23
+module.exports =  orderRouter

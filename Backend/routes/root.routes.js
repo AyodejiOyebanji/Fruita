@@ -1,10 +1,9 @@
 
-import express  from 'express';
-import Product from "../model/product.model.js";
-import User from "../model/user.model.js"
+const express = require('express');
+const Product= require("../model/product.model.js");
+const User = require("../model/user.model.js")
 
-import data from "../data.js"
-
+// import data from "../data.js"
 const rootRouter= express.Router()
 
 rootRouter.get("/", async (req,res)=>{w
@@ -14,6 +13,4 @@ rootRouter.get("/", async (req,res)=>{w
     const createdUsers= await User.insertMany(data.users);
     res.send({createdProducts,createdUsers})
 })
-
-export default rootRouter
-
+module.exports = rootRouter;

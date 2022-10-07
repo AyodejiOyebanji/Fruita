@@ -1,6 +1,6 @@
 {
   "name": "suntwist",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://sun-twist.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

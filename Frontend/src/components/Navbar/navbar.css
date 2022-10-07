@@ -5,6 +5,10 @@
   height: 40px;
   border-radius: 100px;
   outline: none;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 #navbar {
   height: 100px;
